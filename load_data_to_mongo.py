@@ -17,7 +17,7 @@ def load_data_to_mongo(topic):
     database_name = topic_stripped + "DB"
 
     # MongoDB connection string
-    connection_string = f"mongodb+srv://scyt:Bl00mar3h@cluster0.ivlin.mongodb.net/{database_name}?retryWrites=true&w=majority"
+    connection_string = f"mongodb+srv://[username:password@]cluster0.ivlin.mongodb.net/{database_name}?retryWrites=true&w=majority"
 
     # Create a MongoDB client
     client = pymongo.MongoClient(connection_string)
